@@ -17,17 +17,18 @@ e)                  f)              g)                  h)
 1 0 1 0 1           1 2 3 4 5       21 22 23 24 25      1
 
 i)                  j)              k)                  l)
-      1             * *   * *       01 02 03 04 05      2
-   1    1           *  * *  *       05 04 03 02 01      2 4
-  1   1   1         *   *   *       02 04 06 08 10      2 4 8
-1   1   1   1       *       *       10 08 06 04 02      2 4 8 16
+   1                * *   * *       01 02 03 04 05      2
+  1 1               *  * *  *       05 04 03 02 01      2 4
+ 1 1 1              *   *   *       02 04 06 08 10      2 4 8
+1 1 1 1             *       *       10 08 06 04 02      2 4 8 16
                     *       *       03 06 09 12 15      2 4 8 16 32
                                     15 12 09 06 03      2 4 8 16 32 64
-m)  *       *
-    * *   * *
-    *   *   *
-    *       *
-    *       *
+m)                  n)              l)
+*       *           1 0 1 0 1       ----c----
+* *   * *           1 0 1 0 1       --c-b-c--
+*   *   *           1 0 1 0 1       c-b-a-b-c
+*       *           1 0 1 0 1       --c-b-c--
+*       *           1 0 1 0 1       ----c----
 """
 '''
 runs = 0
@@ -83,7 +84,26 @@ while True:
     print(F'{overs}.{current_ball_in_over} ({max_overs})')
 '''
 
-for i in range(0, 5):
-    for j in range(0, 5):
-        print("*", end=" ")
-    print("")
+# for i in range(0, 5):
+#     for j in range(0, 5):
+#         print("*", end=" ")
+#     print("")
+
+# for i in range(0, 5):
+#     for j in range(0, 5):
+#         print(F"{i % 2}", end=" ")
+#     print("")
+#
+
+
+
+# for i in range(4, 0, -1):
+#     space = " "*i
+#     print(space, end="")
+#     for j in range(5, i, -1):
+#         print("1", end=" ")
+#     print("")
+
+
+
+
